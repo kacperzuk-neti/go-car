@@ -60,7 +60,7 @@ func ExtractCar(c *cli.Context) error {
 		if err != nil {
 			return err
 		}
-		store, err = carstorage.OpenReadable(carFile)
+		store, err = carstorage.OpenReadable(carFile, car.ZeroLengthSectionAsEOF(true))
 		if err != nil {
 			return err
 		}
@@ -129,7 +129,7 @@ func NewStdinReadStorage(reader io.Reader) (*stdinReadStorage, []cid.Cid, error)
 		lk:     &lk,
 		cond:   sync.NewCond(&lk),
 	}
-	rdr, err := car.NewBlockReader(reader)
+	rdr, err := car.NewBlockReader(reader, car.ZeroLengthSectionAsEOF(true))
 	if err != nil {
 		return nil, nil, err
 	}
