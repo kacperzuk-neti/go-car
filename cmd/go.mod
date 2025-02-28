@@ -1,4 +1,4 @@
-module github.com/ipld/go-car/cmd
+module github.com/kacperzuk-neti/go-car/cmd
 
 go 1.23
 

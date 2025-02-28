@@ -34,5 +34,5 @@ COMMANDS:
 
 To install the latest version of `car`, run:
 ```shell script
-go install github.com/ipld/go-car/cmd/car@latest
+go install github.com/kacperzuk-neti/go-car/cmd/car@latest
 ```

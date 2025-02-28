@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ipld/go-car/cmd/car/lib"
+	"github.com/kacperzuk-neti/go-car/cmd/car/lib"
 	"github.com/urfave/cli/v2"
 )
 
